@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="style.css">
+
+<section class="hero">
+    <h1 class="glitch-title">NEON AETHER</h1>
+    <p>RECLAIM THE REALITY. DEBUG THE SOUL.</p>
+    <button class="cta-button">Pre-Register Now</button>
+</section>
+
+<section class="features-grid">
+    <div class="bento-card">
+        <h2>Urban Exploration</h2>
+        <p>Traverse a 1:1 recreation of Shibuya.</p>
+    </div>
+    <div class="bento-card">
+        <h2>Tag-Team Combat</h2>
+        <p>Swap between 4 unique Glitch-Walkers.</p>
+    </div>
+</section>
+
+<section class="features-grid" style="display: block; text-align: center;">
+    <h2>Combat Training Mode</h2>
+    <p>Use <b>Arrow Keys</b> to move and <b>Space</b> to Attack!</p>
+    
+    <div id="game-arena" style="width: 100%; height: 300px; background: #111; border: 2px solid var(--cyber-blue); position: relative; overflow: hidden; border-radius: 15px;">
+        <div id="player" style="width: 40px; height: 40px; background: var(--neon-pink); position: absolute; top: 130px; left: 50px; border-radius: 5px; box-shadow: 0 0 10px var(--neon-pink);"></div>
+        <div id="enemy" style="width: 30px; height: 30px; background: var(--cyber-blue); position: absolute; top: 135px; right: 50px; border-radius: 50%; box-shadow: 0 0 15px var(--cyber-blue);"></div>
+    </div>
+
+    <h3 id="score-board">Glitches Neutralized: 0 | Time Left: <span id="timer">30</span>s</h3>
+    <button id="restart-btn" style="display:none; margin: 10px auto; padding: 10px 20px; background: var(--cyber-blue); border: none; cursor: pointer; font-weight: bold; color: black; border-radius: 5px;">TRY AGAIN</button>
+</section>
+
+<script src="script.js"></script>
+<footer style="text-align: center; padding: 20px; color: rgba(255,255,255,0.3); font-size: 0.8rem;">
+    &copy; 2026 NEON AETHER | Developed by <b>Ehab </b>
+</footer>

@@ -1,0 +1,69 @@
+:root {
+    --neon-pink: #ff007f;
+    --cyber-blue: #00f2ff;
+    --dark-bg: #0a0a0c;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: white;
+    font-family: 'sans-serif';
+    margin: 0;
+}
+
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366');
+    background-size: cover;
+    text-align: center;
+}
+
+.glitch-title {
+    font-size: 4rem;
+    color: var(--cyber-blue);
+    text-shadow: 3px 3px var(--neon-pink);
+    margin: 0;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background: transparent;
+    border: 2px solid var(--neon-pink);
+    color: white;
+    cursor: pointer;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+}
+
+.bento-card {
+    background: #1a1a1d;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid var(--neon-pink);
+}
+
+h2 { color: var(--cyber-blue); }
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-5px, 5px); }
+    40% { transform: translate(-5px, -5px); }
+    60% { transform: translate(5px, 5px); }
+    80% { transform: translate(5px, -5px); }
+    100% { transform: translate(0); }
+}
+
+.glitch-title:hover {
+    animation: glitch 0.3s infinite;
+    cursor: crosshair;
+}
