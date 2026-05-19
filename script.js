@@ -22,16 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    fullscreenBtn.addEventListener('click', () => {
-        const gameSection = arena.parentElement;
-        if (!document.fullscreenElement) {
-            gameSection.requestFullscreen().catch(err => {
-                alert(`Error attempting to enable fullscreen: ${err.message}`);
-            });
-        } else {
-            document.exitFullscreen();
-        }
-    });
+   
 
     function startClock() {
         const gameClock = setInterval(() => {
