@@ -1,4 +1,5 @@
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+
     const player = document.getElementById('player');
     const enemy = document.getElementById('enemy');
     const arena = document.getElementById('game-arena');
@@ -104,4 +105,5 @@ window.addEventListener('DOMContentLoaded', () => {
         enemy.style.top = Math.random() * 300 + "px";
         enemy.style.left = (Math.random() * 70 + 10) + "%";
     }
+
 });
